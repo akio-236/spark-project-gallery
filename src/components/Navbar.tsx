@@ -29,8 +29,8 @@ const Navbar = () => {
               <a href="#about" className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
                 About
               </a>
-              <Button variant="default" size="sm">
-                Contact
+              <Button variant="default" size="sm" asChild>
+                <Link to="/contact">Contact</Link>
               </Button>
             </div>
           </div>
@@ -70,8 +70,8 @@ const Navbar = () => {
               About
             </a>
             <div className="px-3 py-2">
-              <Button variant="default" className="w-full">
-                Contact
+              <Button variant="default" className="w-full" asChild>
+                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               </Button>
             </div>
           </div>
